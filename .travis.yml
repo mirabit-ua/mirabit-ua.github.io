@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - '6'
+
+# (by default, Travis will run "yarn test" script when the language is node_js)
+
+# deploy is run after "yarn test"
+deploy:
+  # keep the build we just made with "yarn test" (dist/)
+  skip_cleanup: true
+
+  # define the script to use for deployment
+  provider: script
+  script: ./deploy.sh
+
+  # only run on one version of node (v5 here)
+  on:
+    branch: src
+    node: '6'
+
+env:
+  global:
+    - secure: >-
+        osbYOD1c56JFdEH7l2gc73jMrqc+RtKBZ3vy4JdWBk1Iofh+RVhn/UFpmUc1hfiJKc0+blp0sdBdbupi98OPnQIiNlO3BW1RcXIFul5+d1qhOMMQWACk+Vnhnsn8KKGvE2yrGudvXTuc/Gkccx5fAZi3tR9LM/hdOsWfYRI8y0z+WXHZgkNyxe06q8s7ryhSAgKF85k5MPo8JK2QD+WXaquZ/OLA68STRycAg8vCZTUzRkFHmx+Qofc1QzXYhGKeDwBBXq7tyV+SIbb+DPoazEdoVb3ZRKFD2jKSwTT4q3PQ+6VTlTnqv3BvfI/sDFb8GOV9gYBNY6QKd05PlB+ZOkowM5QXmyhYemsFVszzXTUIXnnS/w/EzxZ4fxHj8UMWpUDtfcIMAE+88GRBkn6De4Aiwg2w6Jatob+LoMeBJi8C1yS7XfEOCeLxtLoQB8MlLRViZ5uCNwjHG84LjFzYcAxdFUHzu1ncm9rFSkCKP0n+I/T4+9m8gcwa3yfufxjxPj0lLToj9VOtMdSt6+cSRnld+2JuD5jrcAufEdI5NYxO1GKxJDt7aQLj6+jxq50jK4zOyK0wSxLjg3dsk+D080b6IZkvjfcdJVRGizS+YQfRW8cqkXjhpIoDN42xaj7Y/Nsx5+mjkjv/vgsBJ7iJYayUuADLDpISqgTybqmBZEM=
+    - GIT_DEPLOY_REPO=https://$GITHUB_TOKEN@github.com/mirabit-ua/mirabit-ua.github.io.git
