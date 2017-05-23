@@ -72,18 +72,14 @@ export default () => {
       <section id="about" className="front-page-section">
         <div className="section-header">
           <div className="container">
-            <div className="row">
+            <div className="row justify-content-center">
               <div className="col-sm-12">
                 <h3>About</h3>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="section-content">
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-12">
-                Mirabit is a team of professionals, which united to provide services in Software Development, Quality Assurance, and Data Analysis / Machine Learning fields.
+              <div className="col-sm-10 col-sm-offset-1">
+                <div className="section-description">
+                  Mirabit is a team of professionals, which united to provide services in Software Development, Quality Assurance, and Data Analysis / Machine Learning fields.
+                </div>
               </div>
             </div>
           </div>
@@ -93,7 +89,7 @@ export default () => {
       <section id="services" className="front-page-section">
         <div className="section-header">
           <div className="container">
-            <div className="row">
+            <div className="row justify-content-center">
               <div className="col-sm-12">
                 <h3>Services</h3>
               </div>
@@ -110,9 +106,7 @@ export default () => {
             <div className="row inline-columns">
               <div className="col-sm-4">
                 <div className="service" style={{ color: '#f18b6d' }}>
-                  <div className="service-icon">
-                    <i className="fa fa-diamond" />
-                  </div>
+                  <div className="service-icon"><i className="fa fa-diamond" /></div>
                   <div className="service-title">
                     <h5>Quality Assurance</h5>
                   </div>
@@ -123,9 +117,7 @@ export default () => {
               </div>
               <div className="col-sm-4">
                 <div className="service" style={{ color: '#f1d204' }}>
-                  <div className="service-icon">
-                    <i className="fa fa-code" />
-                  </div>
+                  <div className="service-icon"><i className="fa fa-code" /></div>
                   <div className="service-title">
                     <h5>Software Development</h5>
                   </div>
@@ -137,7 +129,9 @@ export default () => {
               <div className="col-sm-4">
                 <div className="service" style={{ color: '#6a4d8a' }}>
                   <div className="service-icon"><i className="fa fa-search" /></div>
-                  <div className="service-title"><h5>Data Analysis</h5></div>
+                  <div className="service-title">
+                    <h5>Data Analysis</h5>
+                  </div>
                   <div className="service-entry">
                     The goal of data analysis is to discover useful information to optimize resources, increase performance, etc. We can work on getting the useful information from your data!
                   </div>
