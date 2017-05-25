@@ -39,7 +39,7 @@ export default () => {
               </div>
               <div className="col-sm-10 col-sm-offset-1">
                 <div className="section-description">
-                  Mirabit is a team of professionals, which united to provide services in Software Development, Quality Assurance, and Data Analysis / Machine Learning fields.
+                  Mirabit is a team of professionals, which is united to provide services in Software Development, Quality Assurance, and Data Analysis / Machine Learning fields.
                 </div>
               </div>
             </div>
@@ -56,7 +56,7 @@ export default () => {
               </div>
               <div className="col-sm-10 col-sm-offset-1">
                 <div className="section-description">
-                  In order to help you grow your business, our experts can advise you in in the following areas:
+                  In order to help you grow your business, our experts can advise you in the following areas:
                 </div>
               </div>
             </div>
@@ -167,7 +167,7 @@ export default () => {
                         </span>
 
                         <span className="box-right-row" data-customizer="contact-us-phone">
-                          Phone: +38 (000) 555-5555
+                          Phone: +38 (073) 022-3417
                         </span>
 
                       </div>
