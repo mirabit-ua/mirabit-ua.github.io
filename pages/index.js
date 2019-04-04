@@ -167,7 +167,9 @@ export default () => {
                         </span>
 
                         <span className="box-right-row" data-customizer="contact-us-phone">
+
                           Phone: +38 (073) 022-3417
+
                         </span>
 
                       </div>
