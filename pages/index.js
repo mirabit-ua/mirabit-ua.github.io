@@ -148,7 +148,7 @@ export default () => {
 
                       <div className="box-right">
                         <span className="box-right-row" data-customizer="contact-us-address-1">
-                          Kharkiv, Ukraine
+                          Kyiv, Ukraine
                         </span>
                       </div>
                     </div>
