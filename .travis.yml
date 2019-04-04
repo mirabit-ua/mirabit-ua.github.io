@@ -23,4 +23,4 @@ deploy:
 
 env:
   global:
-    - GIT_DEPLOY_REPO=https://github.com/mirabit-ua/mirabit-ua.github.io.git
+    - GIT_DEPLOY_REPO=git@github.com:mirabit-ua/mirabit-ua.github.io.git
