@@ -4,6 +4,7 @@ node_js:
 
 before_install:
   - openssl aes-256-cbc -K $encrypted_de02db4d389f_key -iv $encrypted_de02db4d389f_iv -in deploy-key.enc -out ~/.ssh/id_ecdsa -d
+  - chmod 700 ~/.ssh && chmod 600 ~/.ssh/id_ecdsa
 
 # (by default, Travis will run "yarn test" script when the language is node_js)
 
