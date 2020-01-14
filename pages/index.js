@@ -15,7 +15,7 @@ export default () => {
             <div className="row justify-content-end">
               <div className="col-sm-12">
                 <h1>
-                  Let's shit together!
+                  Let's work together!
                 </h1>
               </div>
 
